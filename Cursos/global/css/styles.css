@@ -57,20 +57,48 @@ h2 {
 .section {
     margin-bottom: 20px;
 }
-.align-left {
-    text-align: left;
-    display: inline-block;
-}
+
 .section h3 {
-    background-color: #e9e9e9;
-    padding: 10px;
+    background-color: #f0f0f0; /* Fondo más claro */
+    padding: 15px;
     cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.section h3:hover {
+    background-color: #e0e0e0; /* Cambia el fondo al pasar el cursor */
+}
+
+.icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
 }
 
 .section-content {
     display: none;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #e9e9e9;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.section-content a {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+.section-content a .icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.section-content a:hover .icon {
+    transform: translateX(5px); /* Mueve el icono a la derecha al pasar el cursor */
 }
 
 a {
@@ -82,7 +110,9 @@ a {
 
 a:hover {
     color: #800000;
+    text-decoration: underline;
 }
+
 .download-button {
     font-size: 1em;
     padding: 3px 6px;
